@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--PaleBlue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-container{
+
+    width: 330px;
+    height: 570px;
+    margin: 70px auto;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.imagen{
+
+    background-image: url(./images/illustration-hero.svg);
+    height: 162px;
+    background-size: cover;
+
+}
+
+h1{
+
+    margin: 38px auto 0px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.4em;
+    color: var(--DarkBlue);
+
+}
+
+.primer-parrafo{
+
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 26px;
+    padding: 0 30px;
+    color: var(--DesaturatedBlue);
+
+}
+
+.plan-anual{
+
+    width: 280px;
+    height: 82px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 24px;
+    border-radius: 8px;
+    background-color: var(--VeryPaleBlue);
+
+}
+
+.imagen-musica{
+
+    background-image: url(./images/icon-music.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+
+}
+
+.plan-precio p:nth-child(1){
+
+    font-size: 1em;
+    font-weight: 900;
+    color: var(--DarkBlue);
+
+}
+
+.plan-precio p:nth-child(2){
+
+    color: var(--DesaturatedBlue);
+
+}
+
+.cambio{
+
+    color: var(--BrightBlue);
+    font-weight: 700;
+    font-size: 0.8em;
+    margin-left: 40px;
+
+}
+
+.cambio:hover{
+
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+
+}
+
+button{
+
+    border: none;
+    width: 280px;
+    height: 50px;
+    background-color: var(--BrightBlue);
+    color: var(--VeryPaleBlue);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 28px;
+    box-shadow: 1px 10px 8px 3px var(--PaleBlue);
+
+}
+
+button:hover{
+
+    background-color: var(--DesaturatedBlue);
+    cursor: pointer;
+
+}
+
+.cancelar-orden{
+
+    text-align: center;
+
+}
+
+.cancelar{
+
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+    font-size: 1em;
+    font-weight: 900;
+
+}
+
+.cancelar:hover{
+
+    color: var(--DarkBlue);
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:944px){
+
+    body{
+
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size: contain;
+
+    }
+
+    .main-container{
+
+        width: 450px;
+        height: 645px;
+        margin-bottom: 50px;
+
+    }
+
+    .imagen{
+
+        height: 200px;
+
+    }
+
+    h1{
+        
+        margin: 48px 0px 24px;
+
+    }
+
+    .primer-parrafo{
+
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding: 0 95px;
+
+    }
+    
+    .plan-anual{
+
+        width: 318px;
+        height: 90px;
+        padding: 0px 10px;
+        margin-bottom: 28px;
+
+    }
+
+    .cambio{
+
+        margin-left: 60px;
+
+    }
+
+    button{
+
+        width: 318px;
+        margin-bottom: 36px;
+
+    }
+
+}
